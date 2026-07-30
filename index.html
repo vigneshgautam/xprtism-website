@@ -136,8 +136,9 @@
   .contact-section { border-top: 1px solid var(--border-default); }
   .contact-grid { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 1fr; }
   @media (min-width: 1024px) { .contact-grid { grid-template-columns: 0.9fr 1.1fr; } }
-  .contact-details { padding: 64px 24px; display: flex; flex-direction: column; gap: 26px; }
-  @media (min-width: 640px) { .contact-details { padding: 64px 56px; } }
+  .contact-details { padding: 64px 24px 24px; display: flex; flex-direction: column; gap: 26px; }
+  @media (min-width: 640px) { .contact-details { padding: 64px 56px 24px; } }
+  @media (min-width: 1024px) { .contact-details { padding-bottom: 64px; } }
   .contact-details h2 { font-size: 28px; font-weight: 700; letter-spacing: -0.01em; color: var(--color-navy-900); margin: 0; }
   @media (min-width: 640px) { .contact-details h2 { font-size: 34px; } }
   .contact-fields { display: flex; flex-direction: column; gap: 18px; font-size: 17px; color: var(--color-navy-900); }
@@ -145,8 +146,9 @@
   .contact-fields a { color: var(--color-orange-500); }
   .contact-fields a:hover { color: var(--color-orange-600); }
 
-  .contact-form-wrap { padding: 64px 24px; }
-  @media (min-width: 640px) { .contact-form-wrap { padding: 64px 56px; } }
+  .contact-form-wrap { padding: 24px 24px 64px; }
+  @media (min-width: 640px) { .contact-form-wrap { padding: 24px 56px 64px; } }
+  @media (min-width: 1024px) { .contact-form-wrap { padding-top: 64px; } }
   .field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
   .field label { font-size: 13px; font-weight: 600; color: var(--color-navy-900); }
   .field input, .field textarea {

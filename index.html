@@ -47,7 +47,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: var(--radius-md);
     font-weight: 600;
     color: #ffffff;
     background: var(--color-orange-500);
@@ -118,7 +117,8 @@
   @media (min-width: 640px) {
     .service-row { grid-template-columns: 64px 240px 1fr; gap: 24px; }
   }
-  .service-num { font-size: 16px; font-weight: 700; color: var(--color-orange-500); }
+  .service-num { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: var(--color-orange-500); font-size: 13px; font-weight: 700; color: #fff; }
+  @media (min-width: 640px) { .service-num { width: 40px; height: 40px; font-size: 15px; } }
   .service-title { font-size: 24px; font-weight: 700; letter-spacing: -0.01em; color: var(--color-navy-900); margin: 0; }
   @media (min-width: 640px) { .service-title { font-size: 30px; } }
   .service-desc { grid-column: span 2; font-size: 17px; color: var(--text-muted); margin: 0; }
